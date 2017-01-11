@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetworkService.Contracts</RootNamespace>
+    <AssemblyName>NetworkService.Contracts</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)\bin\Debug\Server</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BaseIntermediateOutputPath>$(SolutionDir)\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(SolutionDir)\bin\Release\Server</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BaseIntermediateOutputPath>$(SolutionDir)\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="INetworkService.cs" />
+    <Compile Include="Models\Exceptions\Basic\NetworkServiceClientErrorException.cs" />
+    <Compile Include="Models\Exceptions\Basic\NetworkServiceInformationalException.cs" />
+    <Compile Include="Models\Exceptions\Basic\NetworkServiceRedirectionException.cs" />
+    <Compile Include="Models\Exceptions\Basic\NetworkServiceServerErrorException.cs" />
+    <Compile Include="Models\Exceptions\NetworkServiceContentTypeException.cs" />
+    <Compile Include="Models\Exceptions\Specifics\NetworkServiceBadRequestException.cs" />
+    <Compile Include="Models\Exceptions\Specifics\NetworkServiceForbiddenException.cs" />
+    <Compile Include="Models\Exceptions\Specifics\NetworkServiceInternalServerErrorException.cs" />
+    <Compile Include="Models\Exceptions\Basic\NetworkServiceException.cs" />
+    <Compile Include="Models\Exceptions\Specifics\NetworkServiceNotFoundException.cs" />
+    <Compile Include="Models\Exceptions\Specifics\NetworkServiceUnauthorizedException.cs" />
+    <Compile Include="Models\FileModel.cs" />
+    <Compile Include="Models\Interfaces\IError.cs" />
+    <Compile Include="Adapters\IHttpClientAdapter.cs" />
+    <Compile Include="Models\Interfaces\IErrorModelConverter.cs" />
+    <Compile Include="Models\Interfaces\IFile.cs" />
+    <Compile Include="Models\Interfaces\ITokenMetadata.cs" />
+    <Compile Include="Models\Interfaces\IToken.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile111\System.Net.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
