@@ -136,7 +136,3 @@ Los test de unidad copian la estructura de src para en cada uno de sus respectiv
 La carpeta TestRunner contiene una aplicación WPF para ver el un ejemplo de funcionamiento del NetworkService. Esta aplicación llama a la api que está implementada en la carpeta Api del propio TestRunner, con lo que para poder probarlo hay que poner en marcha ambos proyectos.
 
 La clase _NetworkServiceViewModel_ tiene el código de ejemplo del NetworkService.
-
-# Contrubuir
-
-El proyecto de Network Service está ubicado en el [Foils Web](https://plainconcepts.visualstudio.com/PlainConcepts.Foils.Web/_git/NetworkService) del equipo Windows Platform Team.
