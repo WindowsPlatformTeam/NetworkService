@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B10BAE8-1E8A-406C-AEAF-E60E522DB4F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.NetworkService", "1.NetworkService", "{321D68E2-7652-465F-8C62-385AF7B67CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkService.Contracts", "src\1.NetworkService\NetworkService.Contracts\NetworkService.Contracts.csproj", "{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkService.Impl", "src\1.NetworkService\NetworkService.Impl\NetworkService.Impl.csproj", "{183A9B10-4476-4936-933D-770DF4FCCBC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2FD827A0-BA9E-4200-8363-27F2F626BB09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.NetworkService", "1.NetworkService", "{10A2E889-F742-4925-91B7-4D7395B2489D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkServiceTest", "test\1.NetworkService\NetworkServiceTest\NetworkServiceTest.csproj", "{E7210E9A-61C1-4B17-991B-FD1E8F990203}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestRunner", "TestRunner", "{25FBC615-B4EC-411D-BBB7-C217078CC294}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{10918D4B-A870-4A83-B908-48316C6B29C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkService.TestRunner", "test\TestRunner\NetworkService.TestRunner\NetworkService.TestRunner.csproj", "{C5DD3FBC-FBFF-42EB-9F41-966CCABFE1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkService.TestRunner.Api", "test\TestRunner\Api\NetworkService.TestRunner.Api\NetworkService.TestRunner.Api.csproj", "{810E9C64-53A4-480F-93B7-48CEC838041A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA8E0E8F-948E-47DA-BC4B-724FDA95F05D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183A9B10-4476-4936-933D-770DF4FCCBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183A9B10-4476-4936-933D-770DF4FCCBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183A9B10-4476-4936-933D-770DF4FCCBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183A9B10-4476-4936-933D-770DF4FCCBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7210E9A-61C1-4B17-991B-FD1E8F990203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7210E9A-61C1-4B17-991B-FD1E8F990203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7210E9A-61C1-4B17-991B-FD1E8F990203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7210E9A-61C1-4B17-991B-FD1E8F990203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DD3FBC-FBFF-42EB-9F41-966CCABFE1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DD3FBC-FBFF-42EB-9F41-966CCABFE1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DD3FBC-FBFF-42EB-9F41-966CCABFE1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DD3FBC-FBFF-42EB-9F41-966CCABFE1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810E9C64-53A4-480F-93B7-48CEC838041A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810E9C64-53A4-480F-93B7-48CEC838041A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810E9C64-53A4-480F-93B7-48CEC838041A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810E9C64-53A4-480F-93B7-48CEC838041A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{321D68E2-7652-465F-8C62-385AF7B67CBE} = {3B10BAE8-1E8A-406C-AEAF-E60E522DB4F8}
+		{0D9CC50F-FCA6-4182-A0DE-FB1342F646C3} = {321D68E2-7652-465F-8C62-385AF7B67CBE}
+		{183A9B10-4476-4936-933D-770DF4FCCBC0} = {321D68E2-7652-465F-8C62-385AF7B67CBE}
+		{10A2E889-F742-4925-91B7-4D7395B2489D} = {2FD827A0-BA9E-4200-8363-27F2F626BB09}
+		{E7210E9A-61C1-4B17-991B-FD1E8F990203} = {10A2E889-F742-4925-91B7-4D7395B2489D}
+		{25FBC615-B4EC-411D-BBB7-C217078CC294} = {2FD827A0-BA9E-4200-8363-27F2F626BB09}
+		{10918D4B-A870-4A83-B908-48316C6B29C6} = {25FBC615-B4EC-411D-BBB7-C217078CC294}
+		{C5DD3FBC-FBFF-42EB-9F41-966CCABFE1C6} = {25FBC615-B4EC-411D-BBB7-C217078CC294}
+		{810E9C64-53A4-480F-93B7-48CEC838041A} = {10918D4B-A870-4A83-B908-48316C6B29C6}
+	EndGlobalSection
+EndGlobal
